@@ -1,7 +1,7 @@
 *{
-    padding: 0;
     margin: 0;
-    font-family: 'poppins',sans-serif;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -18,7 +18,7 @@ nav{
     z-index: 100;
 }
 .logo{
-    width: 150px;
+    width: 100px;
     margin-right: 45px;
 }
 .nav-left, .nav-right{
@@ -30,8 +30,8 @@ nav{
     display: inline-block;
 }
 .nav-left ul li img{
-width: 28px;
-margin: 0 15px;
+    width: 28px;
+    margin: 0 15px;
 }
 .nav-user-icon img{
     width: 40px;
@@ -97,15 +97,14 @@ margin: 0 15px;
 }
 .main-content{
     flex-basis: 47%;
-
 }
 .imp-links a,.shortcut-links a{
-text-decoration: none;
-display: flex;
-align-items: center;
-margin-bottom: 30px;
-color: #626262;
-width: fit-content;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
 }
 .imp-links a img{
     width: 25px;
@@ -118,15 +117,16 @@ width: fit-content;
     border-bottom: 1px solid #ccc;
 }
 .shortcut-links a img{
-width: 40px;
-border-radius: 4px;
-margin-right: 5px;
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
 }
 .shortcut-links p{
     margin: 25px 0;
     color: #626262;
     font-weight: 500;
 }
+
 .sidebar-title{
     display: flex;
     align-items: center;
@@ -144,9 +144,10 @@ margin-right: 5px;
 }
 .event{
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 20px;
 }
+
 .left-event{
     border-radius: 10px;
     height: 65px;
@@ -161,6 +162,7 @@ margin-right: 5px;
 .event p{
     font-size: 12px;
 }
+
 .event a{
     font-size: 12px;
     text-decoration: none;
@@ -179,6 +181,7 @@ margin-right: 5px;
 .sidebar-ads{
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 4px;
 }
 .online-list{
     display: flex;
@@ -196,7 +199,7 @@ margin-right: 5px;
 }
 .online-list .online::after{
     top: unset;
-    bottom: 0;
+    bottom: 5px;
 }
 .story-gallery{
     display: flex;
@@ -204,6 +207,50 @@ margin-right: 5px;
     margin-bottom: 20px;
 }
 .story{
-    flex-basis: 18px;
+    flex-basis: 18%;
     padding-top: 32%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.story img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border: 5px solid #1876f2;
+}
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+.story1{
+    background-image: url(images/status-1.png);
+}
+.story2{
+    background-image: url(images/status-2.png);
+}
+.story3{
+    background-image: url(images/status-3.png);
+}
+.story4{
+    background-image: url(images/status-4.png);
+}
+.story5{
+    background-image: url(images/status-5.png);
+}
+
+.story.story1 img{
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
 }
